@@ -11,7 +11,7 @@ import "./styles/globals.css";
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 const activeChain = "binance-testnet";
-const activeClient = process.env.API_KEY;
+const activeClient = process.env.REACT_APP_TEMPLATE_CLIENT_ID;
 
 
 const container = document.getElementById("root");
