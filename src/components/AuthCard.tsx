@@ -11,7 +11,7 @@ const AuthCardContainer = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 157px;
+  margin-top: 120px;
 `;
 
 const AuthCardSection = styled.section`
