@@ -28,7 +28,7 @@ root.render(
   <React.StrictMode>
     <ThirdwebProvider
        activeChain={activeChain}
-       clientId="33a19e8a2410d35a6f76e67a8351e755"
+       clientId=33a19e8a2410d35a6f76e67a8351e755
       supportedWallets={[
         metamaskWallet(),
         coinbaseWallet({ recommended: true }),
