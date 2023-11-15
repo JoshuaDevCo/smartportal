@@ -10,7 +10,7 @@ const App = () => {
       <Route path="auth/*" element={<AuthLayout />} />
       <Route path="user/*" element={<UserLayout />} />
       <Route path="rtl/*" element={<RtlLayout />} />
-      <Route path="/" element={<Navigate to="/admin" replace />} />
+      <Route path="/" element={<Navigate to="/user" replace />} />
     </Routes>
   );
 };
