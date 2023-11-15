@@ -35,7 +35,7 @@ export default function Admin(props: { [x: string]: any }) {
   
   const getRoutes = (routes: RoutesType[]): any => {
     return routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/user") {
         return (
           <Route path={`/${prop.path}`} element={prop.component} key={key} />
         );
@@ -68,7 +68,7 @@ export default function Admin(props: { [x: string]: any }) {
 
                 <Route
                   path="/"
-                  element={<Navigate to="/admin/smartportal" replace />}
+                  element={<Navigate to="/user/smartportal" replace />}
                 />
               </Routes>
             </div>
