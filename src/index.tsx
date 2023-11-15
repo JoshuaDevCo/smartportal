@@ -29,7 +29,6 @@ root.render(
     <ThirdwebProvider
        activeChain={activeChain}
        clientId="33a19e8a2410d35a6f76e67a8351e755"
-      locale={en()}
       supportedWallets={[
         metamaskWallet(),
         coinbaseWallet({ recommended: true }),
