@@ -11,7 +11,7 @@ import "./styles/globals.css";
 // Change this to the chain your app is built for.
 // You can also import additional chains from `@thirdweb-dev/chains` and pass them directly.
 const activeChain = "binance-testnet";
-const clientId = process.env.API_KEY;
+const clientcode = process.env.;
 
 
 const container = document.getElementById("root");
@@ -20,7 +20,7 @@ root.render(
   <React.StrictMode>
     <ThirdwebProvider
       activeChain={activeChain}
-      clientId={clientId}
+      clientId={clientcode}
 
     >
 
