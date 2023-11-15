@@ -20,8 +20,7 @@ root.render(
   <React.StrictMode>
     <ThirdwebProvider
       activeChain={activeChain}
-      clientId={activeClient}
-
+      clientId="33a19e8a2410d35a6f76e67a8351e755"
     >
 
        <BrowserRouter>
