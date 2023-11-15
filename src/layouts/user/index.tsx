@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar";
 import Sidebar from "../../components/sidebar";
 import Footer from "../../components/footer/FooterAuthDefault";
 import routes from "../../routes";
-export default function Admin(props: { [x: string]: any }) {
+export default function UserLayout(props: { [x: string]: any }) {
   const { ...rest } = props;
   const location = useLocation();
   const [open, setOpen] = React.useState(true);
