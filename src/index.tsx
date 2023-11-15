@@ -2,7 +2,16 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import {
+  ThirdwebProvider,
+  ConnectWallet,
+  metamaskWallet,
+  coinbaseWallet,
+  walletConnect,
+  localWallet,
+  embeddedWallet,
+  trustWallet,
+} from "@thirdweb-dev/react";
 import { BrowserRouter } from "react-router-dom";
 import "./styles/globals.css";
 
@@ -18,11 +27,18 @@ const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     <ThirdwebProvider
-      activeChain={activeChain}
-      clientId={process.env.API_KEY}
-
+       activeChain={activeChain}
+       clientId="33a19e8a2410d35a6f76e67a8351e755"
+      locale={en()}
+      supportedWallets={[
+        metamaskWallet(),
+        coinbaseWallet({ recommended: true }),
+        walletConnect(),
+        localWallet(),
+        embeddedWallet({ recommended: true }),
+        trustWallet({ recommended: true }),
+      ]}
     >
-
        <BrowserRouter>
       <App />
       </BrowserRouter>
