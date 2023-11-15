@@ -18,7 +18,7 @@ root.render(
   <React.StrictMode>
     <ThirdwebProvider
       activeChain={activeChain}
-      clientId={process.env.API_KEY;}
+      clientId=process.env.API_KEY;
 
     >
 
