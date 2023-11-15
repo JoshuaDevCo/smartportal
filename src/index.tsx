@@ -18,9 +18,10 @@ root.render(
   <React.StrictMode>
     <ThirdwebProvider
       activeChain={activeChain}
-      clientId="14d46cfb6fea599ac259f9cf11a29d2f"
+      clientId={process.env.REACT_APP_TEMPLATE_CLIENT_ID}
+
     >
-      
+
        <BrowserRouter>
       <App />
       </BrowserRouter>
